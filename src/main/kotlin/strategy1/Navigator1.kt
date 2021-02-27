@@ -5,6 +5,9 @@ class Point
 
 class Navigator1
 {
+    // class context
+    // ...
+
     fun buildRoute( A: Point, B: Point ): Route
     {
         val route :Route = Route()
