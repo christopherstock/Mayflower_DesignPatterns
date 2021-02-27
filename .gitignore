@@ -1,3 +1,10 @@
 
-# system
+# macOS
 .DS_Store
+
+# IntelliJ
+.idea
+
+# gradle
+build
+.gradle
