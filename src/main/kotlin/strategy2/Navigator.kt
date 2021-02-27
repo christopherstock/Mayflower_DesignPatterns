@@ -4,7 +4,7 @@ class Route
 class Point
 enum class TransportType { PRIVATE_VEHICLE, BICYCLE, PUBLIC_TRANSPORT }
 
-class Navigator2
+class Navigator
 {
     // class context
     // ...

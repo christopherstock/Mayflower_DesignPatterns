@@ -3,7 +3,7 @@ package strategy1
 class Route
 class Point
 
-class Navigator1
+class Navigator
 {
     // class context
     // ...

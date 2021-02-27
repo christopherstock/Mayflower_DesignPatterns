@@ -1,10 +1,10 @@
-package strategy3
+package strategy4
 
 class Route
 class Point
 enum class TransportType { PRIVATE_VEHICLE, BICYCLE, PUBLIC_TRANSPORT }
 
-class Navigator3
+class Navigator
 {
     // class context
     // ...
