@@ -26,8 +26,8 @@ class Navigator
         }
     }
 
-    fun buildRoutePrivateVehicle(a: Point, b: Point): Route
-    {
+    fun buildRoutePrivateVehicle(a: Point, b: Point): Route {
+
         val route: Route = Route()
 
         // many lines of code + API invocations
@@ -36,8 +36,8 @@ class Navigator
         return route;
     }
 
-    fun buildRouteBicycle(a: Point, b: Point): Route
-    {
+    fun buildRouteBicycle(a: Point, b: Point): Route {
+
         val route: Route = Route()
 
         // many lines of code + API invocations
@@ -46,8 +46,8 @@ class Navigator
         return route;
     }
 
-    fun buildRoutePublicTransport(a: Point, b: Point): Route
-    {
+    fun buildRoutePublicTransport(a: Point, b: Point): Route {
+
         val route: Route = Route()
 
         // many lines of code + API invocations
