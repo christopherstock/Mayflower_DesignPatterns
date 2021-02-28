@@ -9,26 +9,22 @@ class Navigator
     // class context
     // ...
 
-    fun buildRoute( type: TransportType, A: Point, B: Point): Route
-    {
-        val routeStrategy = when ( type )
-        {
-            TransportType.PRIVATE_VEHICLE ->
-            {
+    fun buildRoute(type: TransportType, a: Point, b: Point): Route {
+
+        val routeStrategy = when ( type ) {
+            TransportType.PRIVATE_VEHICLE -> {
                 RouteStrategyPrivateVehicle()
             }
 
-            TransportType.BICYCLE ->
-            {
+            TransportType.BICYCLE -> {
                 RouteStrategyBicycle()
             }
 
-            TransportType.PUBLIC_TRANSPORT ->
-            {
+            TransportType.PUBLIC_TRANSPORT -> {
                 RouteStrategyPublicTransport()
             }
         }
 
-        return routeStrategy.buildRoute(A, B)
+        return routeStrategy.buildRoute(a, b)
     }
 }

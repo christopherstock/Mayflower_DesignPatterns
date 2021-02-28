@@ -2,8 +2,8 @@ package strategy4
 
 class RouteStrategyPublicTransport : RouteStrategy
 {
-    override fun buildRoute( A: Point, B: Point): Route
-    {
+    override fun buildRoute(a: Point, b: Point): Route {
+
         val route: Route = Route()
 
         // many lines of code + API invocations

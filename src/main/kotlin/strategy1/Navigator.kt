@@ -8,8 +8,8 @@ class Navigator
     // class context
     // ...
 
-    fun buildRoute( A: Point, B: Point ): Route
-    {
+    fun buildRoute(a: Point, b: Point): Route {
+
         val route :Route = Route()
 
         // many lines of code + API invocations

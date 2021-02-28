@@ -9,12 +9,10 @@ class Navigator
     // class context
     // ...
 
-    fun buildRoute( type: TransportType, A: Point, B: Point): Route
-    {
-        when ( type )
-        {
-            TransportType.PRIVATE_VEHICLE ->
-            {
+    fun buildRoute(type: TransportType, a: Point, b: Point): Route {
+
+        when ( type ) {
+            TransportType.PRIVATE_VEHICLE -> {
                 val route: Route = Route()
 
                 // many lines of code + API invocations
@@ -23,8 +21,7 @@ class Navigator
                 return route
             }
 
-            TransportType.BICYCLE ->
-            {
+            TransportType.BICYCLE -> {
                 val route: Route = Route()
 
                 // many lines of code + API invocations
@@ -33,8 +30,7 @@ class Navigator
                 return route
             }
 
-            TransportType.PUBLIC_TRANSPORT ->
-            {
+            TransportType.PUBLIC_TRANSPORT -> {
                 val route: Route = Route()
 
                 // many lines of code + API invocations
