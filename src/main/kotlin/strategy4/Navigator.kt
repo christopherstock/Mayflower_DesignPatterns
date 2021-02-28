@@ -11,52 +11,24 @@ class Navigator
 
     fun buildRoute( type: TransportType, A: Point, B: Point): Route
     {
-        when ( type )
+        val routeStrategy = when ( type )
         {
             TransportType.PRIVATE_VEHICLE ->
             {
-                return this.buildRoutePrivateVehicle( A, B );
+                RouteStrategyPrivateVehicle()
             }
 
             TransportType.BICYCLE ->
             {
-                return this.buildRouteBicycle( A, B );
+                RouteStrategyBicycle()
             }
 
             TransportType.PUBLIC_TRANSPORT ->
             {
-                return this.buildRoutePublicTransport( A, B );
+                RouteStrategyPublicTransport()
             }
         }
-    }
 
-    fun buildRoutePrivateVehicle(A: Point, B: Point): Route
-    {
-        val route: Route = Route()
-
-        // many lines of code + API invocations
-        // ...
-
-        return route;
-    }
-
-    fun buildRouteBicycle(A: Point, B: Point): Route
-    {
-        val route: Route = Route()
-
-        // many lines of code + API invocations
-        // ...
-
-        return route;
-    }
-
-    fun buildRoutePublicTransport(A: Point, B: Point): Route
-    {
-        val route: Route = Route()
-
-        // many lines of code + API invocations
-        // ...
-
-        return route;
+        return routeStrategy.buildRoute(A, B)
     }
 }

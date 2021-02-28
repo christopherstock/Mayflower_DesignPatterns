@@ -15,17 +15,17 @@ class Navigator
         {
             TransportType.PRIVATE_VEHICLE ->
             {
-                return this.buildRoutePrivateVehicle( A, B );
+                return this.buildRoutePrivateVehicle( A, B )
             }
 
             TransportType.BICYCLE ->
             {
-                return this.buildRouteBicycle( A, B );
+                return this.buildRouteBicycle( A, B )
             }
 
             TransportType.PUBLIC_TRANSPORT ->
             {
-                return this.buildRoutePublicTransport( A, B );
+                return this.buildRoutePublicTransport( A, B )
             }
         }
     }
@@ -57,6 +57,6 @@ class Navigator
         // many lines of code + API invocations
         // ...
 
-        return route;
+        return route
     }
 }
