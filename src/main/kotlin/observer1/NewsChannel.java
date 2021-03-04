@@ -5,6 +5,16 @@ public class NewsChannel implements Channel {
 
     @Override
     public void update(Object news) {
-        this.news = ((String) news);
+        this.setNews((String) news);
+    }
+
+    public void setNews(String news)
+    {
+        this.news = news;
+    }
+
+    public String getNews()
+    {
+        return this.news;
     }
 }
