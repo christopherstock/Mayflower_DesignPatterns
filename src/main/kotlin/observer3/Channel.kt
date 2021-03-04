@@ -1,5 +1,5 @@
-package observer3;
+package observer3
 
-public interface Channel {
-    public void update(Object o);
+interface Channel {
+    fun update(o: Any?)
 }

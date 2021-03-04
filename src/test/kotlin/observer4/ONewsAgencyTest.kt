@@ -1,14 +1,14 @@
-package observer3
+package observer4
 
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-class NewsAgencyTest
+class ONewsAgencyTest
 {
     @Test
     fun testObserver() {
-        val observable = observer3.NewsAgency()
-        val observer = observer3.NewsChannel()
+        val observable = ONewsAgency()
+        val observer = ONewsChannel()
 
         observable.addObserver(observer)
         observable.setNews("news")
