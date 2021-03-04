@@ -1,4 +1,4 @@
-package observer1;
+package observer3;
 
 public class NewsChannel implements Channel {
     private String news;
