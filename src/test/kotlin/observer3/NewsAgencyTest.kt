@@ -7,8 +7,8 @@ class NewsAgencyTest
 {
     @Test
     fun testObserver() {
-        val observable = observer3.NewsAgency()
-        val observer = observer3.NewsChannel()
+        val observable = NewsAgency()
+        val observer = NewsChannel()
 
         observable.addObserver(observer)
         observable.setNews("news")
