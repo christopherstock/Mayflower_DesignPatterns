@@ -7,12 +7,13 @@ class NewsAgency : Observable()
     // context
     // ...
 
-    private var news: String? = null
+    private var news: String = ""
 
-    fun setNews(news: String?)
+    fun updateNews(news: String)
     {
         this.news = news
-        setChanged()
-        notifyObservers(news)
+
+        this.setChanged()
+        this.notifyObservers(news)
     }
 }
