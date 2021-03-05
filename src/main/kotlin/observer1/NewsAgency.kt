@@ -9,7 +9,8 @@ class NewsAgency
 
     val channelBloomberg = NewsChannelBloomberg()
 
-    fun updateNews(news: String) {
+    fun updateNews(news: String)
+    {
         this.news = news
 
         channelBloomberg.update(news)

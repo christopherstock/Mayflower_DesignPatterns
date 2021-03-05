@@ -6,12 +6,13 @@ import kotlin.test.assertEquals
 class NewsAgencyTest
 {
     @Test
-    fun testObserver() {
+    fun testObserver()
+    {
         val observable = NewsAgency()
         val observer = NewsChannel()
 
         observable.addObserver(observer)
         observable.setNews("news")
-        assertEquals(observer.news, "news")
+        assertEquals("news", observer.news)
     }
 }

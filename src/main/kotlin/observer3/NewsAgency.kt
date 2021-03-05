@@ -1,19 +1,25 @@
 package observer3
 
-import java.util.ArrayList
+class NewsAgency
+{
+    // context
+    // ...
 
-class NewsAgency {
-    private var news: String? = null
-    private val channels: MutableList<Channel> = ArrayList()
-    fun addObserver(channel: Channel) {
+    private var news = ""
+    private val channels = mutableListOf<NewsChannel>()
+
+    fun addObserver(channel: NewsChannel)
+    {
         channels.add(channel)
     }
 
-    fun removeObserver(channel: Channel) {
+    fun removeObserver(channel: NewsChannel)
+    {
         channels.remove(channel)
     }
 
-    fun setNews(news: String?) {
+    fun updateNews(news: String)
+    {
         this.news = news
         for (channel in channels) {
             channel.update(this.news)

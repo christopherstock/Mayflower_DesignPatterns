@@ -1,13 +1,14 @@
 package observer2
 
-class NewsChannelCNS {
-
+class NewsChannelCNS
+{
     // context
     // ...
 
     var news = ""
 
-    fun update(news: String) {
+    fun update(news: String)
+    {
         this.news = news
     }
 }
