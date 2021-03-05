@@ -1,6 +1,9 @@
 package observer1
 
-class NewsChannelCNN {
+class NewsChannelBloomberg {
+
+    // context
+    // ...
 
     var news = ""
 

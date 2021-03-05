@@ -10,6 +10,6 @@ class NewsAgencyTest
         val agency = NewsAgency()
         agency.updateNews("Breaking News")
 
-        assertEquals(agency.channelCNN.news, "Breaking News")
+        assertEquals(agency.channelBloomberg.news, "Breaking News")
     }
 }

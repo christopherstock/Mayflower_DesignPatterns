@@ -2,13 +2,16 @@ package observer1
 
 class NewsAgency
 {
+    // context
+    // ...
+
     var news = ""
 
-    val channelCNN = NewsChannelCNN()
+    val channelBloomberg = NewsChannelBloomberg()
 
     fun updateNews(news: String) {
         this.news = news
 
-        channelCNN.update(news)
+        channelBloomberg.update(news)
     }
 }
