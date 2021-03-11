@@ -1,4 +1,4 @@
-package decorator4
+package decorator1
 
 class PizzaPan : Pizza
 {

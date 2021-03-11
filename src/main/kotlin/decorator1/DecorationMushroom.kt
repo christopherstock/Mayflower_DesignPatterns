@@ -1,4 +1,4 @@
-package decorator4
+package decorator1
 
 class DecorationMushroom(pizza: Pizza) : Decoration(pizza)
 {

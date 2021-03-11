@@ -1,4 +1,4 @@
-package decorator4
+package decorator1
 
 abstract class Decoration(private val tree: Pizza) : Pizza
 {
