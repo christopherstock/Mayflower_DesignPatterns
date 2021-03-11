@@ -8,17 +8,19 @@ class DecoratorTest
     @Test
     fun testDecorator()
     {
-        val tree1: ChristmasTree = Garland(ChristmasTreeImpl())
+        val tree1: Pizza = DecorationMushroom(PizzaPan())
         assertEquals(
-            tree1.decorate(),
-            "Christmas tree with Garland"
+            "Pan Pizza with Mushroom",
+            tree1.decorate()
         )
-        val tree2: ChristmasTree = BubbleLights(
-            Garland(Garland(ChristmasTreeImpl()))
+        val tree2: Pizza = DecorationSalami(
+            DecorationMushroom(
+                DecorationMushroom(PizzaPan())
+            )
         )
         assertEquals(
-            tree2.decorate(),
-            "Christmas tree with Garland with Garland with Bubble Lights"
+            "Pan Pizza with Mushroom with Mushroom with Salami",
+            tree2.decorate()
         )
     }
 }

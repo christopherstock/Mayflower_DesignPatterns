@@ -1,9 +1,9 @@
 package decorator4
 
-class ChristmasTreeImpl : ChristmasTree
+class PizzaCheesyCrust : Pizza
 {
     override fun decorate(): String
     {
-        return "Christmas tree"
+        return "Cheesy Crust Pizza"
     }
 }

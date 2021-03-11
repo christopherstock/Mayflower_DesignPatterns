@@ -1,6 +1,6 @@
 package decorator4
 
-interface ChristmasTree
+interface Pizza
 {
     fun decorate(): String
 }
