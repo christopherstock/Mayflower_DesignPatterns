@@ -1,5 +1,6 @@
 package decorator4
 
-interface ChristmasTree {
-    fun decorate(): String?
+interface ChristmasTree
+{
+    fun decorate(): String
 }

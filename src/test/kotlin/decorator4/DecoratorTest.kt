@@ -3,10 +3,11 @@ package decorator4
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-class DecoratorExampleTest
+class DecoratorTest
 {
     @Test
-    fun whenDecoratorsInjectedAtRuntime_thenConfigSuccess() {
+    fun testDecorator()
+    {
         val tree1: ChristmasTree = Garland(ChristmasTreeImpl())
         assertEquals(
             tree1.decorate(),
