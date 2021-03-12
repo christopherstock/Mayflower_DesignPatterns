@@ -35,13 +35,13 @@ class DecoratorTest
         val pizza: DecoratorTopping = ToppingSalami(
             ToppingMushroom(
                 ToppingMushroom(
-                    PizzaPan()
+                    PizzaNewYork()
                 )
             )
         )
         val actual = pizza.decorate()
         assertEquals(
-            "Pan Pizza with Mushroom with Mushroom with Salami",
+            "New York Pizza with Mushroom with Mushroom with Salami",
             actual
         )
     }
@@ -53,14 +53,16 @@ class DecoratorTest
             ToppingMushroom(
                 ToppingPeperoni(
                     ToppingMushroom(
-                        PizzaCheesyCrust()
+                        ToppingMushroom(
+                            PizzaCheesyCrust()
+                        )
                     )
                 )
             )
         )
         val actual = pizza.decorate()
         assertEquals(
-            "Pizza Cheesy Crust with Mushroom with Peperoni with Mushroom with Salami",
+            "Pizza Cheesy Crust with Mushroom with Mushroom with Peperoni with Mushroom with Salami",
             actual
         )
     }

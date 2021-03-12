@@ -1,6 +1,6 @@
 package decorator1
 
-class PizzaPan : DecoratorTopping
+class PizzaPan : Pizza()
 {
     override fun decorate(): String
     {
