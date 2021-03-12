@@ -1,9 +1,9 @@
 package decorator1
 
-abstract class Decoration(private val tree: Pizza) : Pizza
+abstract class Decoration(private val pizza: Pizza) : Pizza
 {
     override fun decorate(): String
     {
-        return tree.decorate()
+        return pizza.decorate()
     }
 }
