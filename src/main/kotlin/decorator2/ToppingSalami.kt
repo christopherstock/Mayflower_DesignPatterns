@@ -7,9 +7,9 @@ class ToppingSalami(decoTop: DecoratorTopping) : Topping(decoTop)
         return super.decorate() + decorateWithSalami()
     }
 
-    override fun cashAmount(): Double
+    override fun cashAmount(): Int
     {
-        return (super.cashAmount() + 1.25)
+        return super.cashAmount() + 125
     }
 
     private fun decorateWithSalami(): String

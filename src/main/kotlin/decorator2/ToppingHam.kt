@@ -7,9 +7,9 @@ class ToppingHam(decoTop: DecoratorTopping) : Topping(decoTop)
         return super.decorate() + decorateWithHam()
     }
 
-    override fun cashAmount(): Double
+    override fun cashAmount(): Int
     {
-        return (super.cashAmount() + 1.20)
+        return super.cashAmount() + 120
     }
 
     private fun decorateWithHam(): String

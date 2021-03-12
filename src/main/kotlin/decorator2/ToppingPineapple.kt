@@ -7,9 +7,9 @@ class ToppingPineapple(decoTop: DecoratorTopping) : Topping(decoTop)
         return super.decorate() + decorateWithPineapple()
     }
 
-    override fun cashAmount(): Double
+    override fun cashAmount(): Int
     {
-        return (super.cashAmount() + 1.10)
+        return super.cashAmount() + 110
     }
 
     private fun decorateWithPineapple(): String

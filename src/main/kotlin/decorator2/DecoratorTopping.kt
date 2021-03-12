@@ -4,5 +4,5 @@ interface DecoratorTopping
 {
     fun decorate(): String
 
-    fun cashAmount(): Double
+    fun cashAmount(): Int
 }

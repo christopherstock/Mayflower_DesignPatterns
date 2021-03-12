@@ -7,7 +7,7 @@ abstract class Topping(private val decoTop: DecoratorTopping) : DecoratorTopping
         return decoTop.decorate()
     }
 
-    override fun cashAmount(): Double
+    override fun cashAmount(): Int
     {
         return decoTop.cashAmount()
     }

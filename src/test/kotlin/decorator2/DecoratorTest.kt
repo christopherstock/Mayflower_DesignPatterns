@@ -40,7 +40,7 @@ class DecoratorTest
         val actualCashAmount = pizza.cashAmount()
         assertEquals(
             actualCashAmount,
-            16.549999999999997
+            1655
         )
     }
 }

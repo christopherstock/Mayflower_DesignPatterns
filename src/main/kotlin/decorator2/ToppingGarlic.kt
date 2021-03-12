@@ -7,9 +7,9 @@ class ToppingGarlic(decoTop: DecoratorTopping) : Topping(decoTop)
         return super.decorate() + decorateWithGarlic()
     }
 
-    override fun cashAmount(): Double
+    override fun cashAmount(): Int
     {
-        return (super.cashAmount() + 0.25)
+        return super.cashAmount() + 25
     }
 
     private fun decorateWithGarlic(): String

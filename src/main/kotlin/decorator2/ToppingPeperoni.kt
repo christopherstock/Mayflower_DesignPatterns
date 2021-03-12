@@ -7,9 +7,9 @@ class ToppingPeperoni(decoTop: DecoratorTopping) : Topping(decoTop)
         return super.decorate() + decorateWithPeperoni()
     }
 
-    override fun cashAmount(): Double
+    override fun cashAmount(): Int
     {
-        return (super.cashAmount() + 0.65)
+        return super.cashAmount() + 65
     }
 
     private fun decorateWithPeperoni(): String

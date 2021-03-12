@@ -7,8 +7,8 @@ class PizzaCheesyCrust : Pizza()
         return "Pizza Cheesy Crust"
     }
 
-    override fun cashAmount(): Double
+    override fun cashAmount(): Int
     {
-        return 8.50
+        return 850
     }
 }

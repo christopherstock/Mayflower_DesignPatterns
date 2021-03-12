@@ -7,9 +7,8 @@ class PizzaPan : Pizza()
         return "Pan Pizza"
     }
 
-
-    override fun cashAmount(): Double
+    override fun cashAmount(): Int
     {
-        return 6.60
+        return 660
     }
 }
