@@ -38,18 +38,18 @@ class DecoratorTest
     }
 
     @Test
-    fun testDecoratorPanPizzaWithMushroomPeperoniMushroomSalami()
+    fun testDecoratorCheesyCrustPizzaWithMushroomPeperoniMushroomSalami()
     {
         val pizza: Pizza = DecorationSalami(
             DecorationMushroom(
                 DecorationPeperoni(
                     DecorationMushroom(
-                        PizzaPan()
+                        PizzaCheesyCrust()
                     )
                 )
             )
         )
         val actual = pizza.decorate()
-        assertEquals("Pan Pizza with Mushroom with Peperoni with Mushroom with Salami", actual)
+        assertEquals("Pizza Cheesy Crust with Mushroom with Peperoni with Mushroom with Salami", actual)
     }
 }
