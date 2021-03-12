@@ -1,6 +1,6 @@
-package decorator2
+package decorator1
 
-class DecorationMushroom(pizza: Pizza) : Decoration(pizza)
+class ToppingMushroom(decoTop: DecoratorTopping) : Topping(decoTop)
 {
     override fun decorate(): String
     {

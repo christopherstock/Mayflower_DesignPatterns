@@ -1,6 +1,6 @@
 package decorator1
 
-class PizzaCheesyCrust : Pizza
+class PizzaCheesyCrust : DecoratorTopping
 {
     override fun decorate(): String
     {

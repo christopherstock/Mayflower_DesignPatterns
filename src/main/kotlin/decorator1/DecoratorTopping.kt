@@ -1,6 +1,6 @@
 package decorator1
 
-interface Pizza
+interface DecoratorTopping
 {
     fun decorate(): String
 }

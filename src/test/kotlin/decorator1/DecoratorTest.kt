@@ -8,48 +8,60 @@ class DecoratorTest
     @Test
     fun testDecoratorPanPizza()
     {
-        val pizza :Pizza = PizzaPan()
+        val pizza :DecoratorTopping = PizzaPan()
         val actual = pizza.decorate()
-        assertEquals("Pan Pizza", actual)
+        assertEquals(
+            "Pan Pizza",
+            actual
+        )
     }
 
     @Test
     fun testDecoratorPanPizzaWithMushroom()
     {
-        val pizza :Pizza = DecorationMushroom(
+        val pizza :DecoratorTopping = ToppingMushroom(
             PizzaPan()
         )
         val actual = pizza.decorate()
-        assertEquals("Pan Pizza with Mushroom", actual)
+        assertEquals(
+            "Pan Pizza with Mushroom",
+            actual
+        )
     }
 
     @Test
     fun testDecoratorPanPizzaWithMushroomMushroomSalami()
     {
-        val pizza: Pizza = DecorationSalami(
-            DecorationMushroom(
-                DecorationMushroom(
+        val pizza: DecoratorTopping = ToppingSalami(
+            ToppingMushroom(
+                ToppingMushroom(
                     PizzaPan()
                 )
             )
         )
         val actual = pizza.decorate()
-        assertEquals("Pan Pizza with Mushroom with Mushroom with Salami", actual)
+        assertEquals(
+            "Pan Pizza with Mushroom with Mushroom with Salami",
+            actual
+        )
     }
 
     @Test
     fun testDecoratorCheesyCrustPizzaWithMushroomPeperoniMushroomSalami()
     {
-        val pizza: Pizza = DecorationSalami(
-            DecorationMushroom(
-                DecorationPeperoni(
-                    DecorationMushroom(
+        val pizza: DecoratorTopping = ToppingSalami(
+            ToppingMushroom(
+                ToppingPeperoni(
+                    ToppingMushroom(
                         PizzaCheesyCrust()
                     )
                 )
             )
         )
         val actual = pizza.decorate()
-        assertEquals("Pizza Cheesy Crust with Mushroom with Peperoni with Mushroom with Salami", actual)
+        assertEquals(
+            "Pizza Cheesy Crust with Mushroom with Peperoni with Mushroom with Salami",
+            actual
+        )
     }
 }
